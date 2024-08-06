@@ -7,14 +7,29 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-.quantity_section
-{
-    display: flex;
-    flex-wrap: nowrap;
+    .flavour_sector
+    {
+        display: flex;
         flex-direction: row;
-    align-items: center;
-    background:#f8f6f3;
-}
+        margin: 30px;
+        justify-content: center;
+    }
+
+    .flavour_sector :first-child
+    {
+        width:51%;
+    }
+
+    .quantity_section
+    {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 5% 12%;
+        background:#f8f6f3;
+    }
     .title_text
     {
     padding-left:80px;width: 30%;
@@ -57,7 +72,7 @@
 .my-float{
 	margin-top:16px;
 }
-.background-img{
+.{
     background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/pista_background.png');
 background-repeat: no-repeat;
 
@@ -120,18 +135,34 @@ background-repeat: no-repeat;
     @media only screen and (max-width: 1010px)
     {
 
+
+    .flavour_sector
+    {
+     display: flex;
+    flex-direction: column;
+    margin: 30px;
+    justify-content: center;
+    }
+
+        .flavour_sector :first-child
+    {
+        width:100%;
+    }
     .quantity_section
         {
             display: flex;
             flex-wrap: nowrap;
                 flex-direction: column;
+                    padding: 0 10%;
             align-items: center;
+
         }
         .quantity_section_item
         {
             display: flex;
             flex-wrap: nowrap;
                 flex-direction: column;
+
             align-items: center;
         }
 
@@ -157,6 +188,38 @@ background-repeat: no-repeat;
             padding-left:80px;width: 80%;
             }
     }
+
+    .item_container
+    {
+
+     padding: 3em;
+    display: grid;
+    margin-top:150px;
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+     .market_quote {
+        padding: 2em;
+        border-radius: .3em;
+        box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+        display:flex;
+        height: 17em;
+        color:black;
+        background:white;
+}
+    .market_container
+    {
+
+     padding: 3em;
+    display: grid;
+
+    grid-gap: 0.5em;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+    }
+
+
 .container {
     padding: 3em;
     display: grid;
@@ -258,7 +321,7 @@ background-repeat: no-repeat;
                 <div style="margin-top:50px">
                     <button class="curved_button">
                         <div style="display:flex;">
-                                  <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">&lt;!&ndash;!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.&ndash;&gt;<path fill="#ffffff" d="M528.1 301.3l47.3-208C578.8 78.3 567.4 64 552 64H159.2l-9.2-44.8C147.8 8 137.9 0 126.5 0H24C10.7 0 0 10.7 0 24v16c0 13.3 10.7 24 24 24h69.9l70.2 343.4C147.3 417.1 136 435.2 136 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-15.7-6.4-29.8-16.8-40h209.6C430.4 426.2 424 440.3 424 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-22.2-12.9-41.3-31.6-50.4l5.5-24.3c3.4-15-8-29.3-23.4-29.3H218.1l-6.5-32h293.1c11.2 0 20.9-7.8 23.4-18.7z"/></svg>
+                                  <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#ffffff" d="M528.1 301.3l47.3-208C578.8 78.3 567.4 64 552 64H159.2l-9.2-44.8C147.8 8 137.9 0 126.5 0H24C10.7 0 0 10.7 0 24v16c0 13.3 10.7 24 24 24h69.9l70.2 343.4C147.3 417.1 136 435.2 136 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-15.7-6.4-29.8-16.8-40h209.6C430.4 426.2 424 440.3 424 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-22.2-12.9-41.3-31.6-50.4l5.5-24.3c3.4-15-8-29.3-23.4-29.3H218.1l-6.5-32h293.1c11.2 0 20.9-7.8 23.4-18.7z"/></svg>
                                   <p style="padding-left:8px">CONTACT NOW</p>
                         </div>
 
@@ -336,6 +399,394 @@ background-repeat: no-repeat;
 
 </div>
    <!----                  ------>
+ <!----     World of flavour section             ------>
+<div class="flavour_sector">
+    <div >
+              <p style="font-size: 40px;
+             color: var(--selected_text_color);">Dive into a World of Flavors (Our Products)</p>
+               <p style="font-size: 23px;margin-right: 11%;
+                    line-height: 1.1;color:#868686;
+                    font-family: system-ui;font-weight: 100;">
+            Discover the exotic world of dry fruits and spices at ASTURAH AL ARABIA.</p>
+
+               <p style="font-size: 23px;margin-right: 11%;
+                    line-height: 1.1;color:#868686;
+                    font-family: system-ui;font-weight: 100;">
+            Whether you’re a home chef looking to elevate your dishes or a retailer seeking premium products for your customers, we have the perfect ingredients to meet your needs. Explore our product catalog and experience the true essence of nature’s bounty.</p>
+
+    </div>
+     <img  src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/flavour_image.png"/>
+
+</div>
+   <!----                  ------>
+
+
+   <!----       item listing           ------>
+
+  <div style="width:100%;">
+        <img width="250px" height="250px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/dry_fruits_title.png"/>
+            <div style="background: #80808042;
+                        margin-top: -200px;
+                        margin-left: 10px;
+                        padding:80px;
+                        border-radius:10px;
+                        ">
+                <div style="display: flex;
+                    justify-content: space-between;">
+                    <div></div>
+                    <span style="font-size: 50px;">DRY FRUITS</span>
+                    <button style="background: #8bc34a;
+                                color: white;
+                                padding: 5px 35px;
+                                border: none;
+                                border-radius: 10px;">
+                        KNOW MORE</button>
+                </div>
+
+        </div>
+      <!--- basil leave -->
+        <div style="display:flex;justify-content: space-around;
+">
+            <img width="250px" height="100px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/basil_leaf.png"/>
+
+        </div>
+               <div style="background: #80808042;margin-top: -100px;">
+                    <div style="padding-top:130px;">
+
+    <div class="market_container">
+
+        <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/badam_image.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Almonds</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+      <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/pista_background.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Pistachios</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+
+         <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/cashew_background.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Cashew from Vietnam</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="market_container">
+
+        <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/badam_india_background.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Cashew from India
+</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+      <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/raisen_image.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Golden Raisins
+</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+
+         <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/wallnut_image.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Wallnut</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+    </div>
+ </div>
+            </div>
+  </div>
+
+
+  <!---  spices --->
+
+    <div style="width:100%;">
+        <img width="250px" height="250px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/spices_image.png"/>
+            <div style="background: #80808042;
+                        margin-top: -200px;
+                        margin-left: 10px;
+                        padding:80px;
+                        border-radius:10px;
+                        ">
+                <div style="display: flex;
+                    justify-content: space-between;">
+                    <div></div>
+                    <span style="font-size: 50px;">SPICES</span>
+                    <button style="background: #8bc34a;
+                                color: white;
+                                padding: 5px 35px;
+                                border: none;
+                                border-radius: 10px;">
+                        KNOW MORE</button>
+                </div>
+
+        </div>
+
+
+
+
+      <!--- basil leave -->
+        <div style="display:flex;justify-content: space-around;
+">
+            <img width="250px" height="100px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/basil_leaf.png"/>
+
+        </div>
+               <div style="background: #80808042;margin-top: -100px;">
+                    <div style="padding-top:130px;">
+
+    <div class="market_container">
+
+        <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/black_pepper.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Black pepper</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+      <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/cloves.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Cloves</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+
+         <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/chilly_image.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Chilly</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+    </div>
+
+
+
+    <div class="market_container">
+
+        <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/cumin_seeds.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Cumin Seed
+</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+      <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/cardamom.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Cardamom
+</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+
+         <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/wallnut_image.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: right;
+                                            background-position-y: bottom;">
+                                <p style="font-size: 35px;text-align: center;
+                            margin-top: 8px;">Wallnut</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+           </div>
+
+        </div>
+    </div>
+ </div>
+            </div>
+  </div>
 
 <a href="https://api.whatsapp.com/send?phone=971502122362&text=Hello ASTURAH AL ARABIA! I Would like to know more about." class="float" target="_blank">
 <i class="fa fa-whatsapp my-float"></i>
