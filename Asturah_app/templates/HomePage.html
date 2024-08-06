@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<link rel="stylesheet" href="{% static 'globalvalue.css' %}">
+
+<style>
+
+.background-img{
+    background:url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/pista_background.png');
+background-repeat: no-repeat;
+    position: relative;
+    background-size: 52%;
+    background-position: right;
+    background-position-y: bottom;
+    opacity:0.5
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+    .menu_item li
+    {
+        padding:20px;
+        color: var(--unselected_text_color);
+        font-size:18px;
+        font-style: normal;
+
+    }
+
+      .menu_item li:hover
+    {
+        color: var(--selected_text_color);
+    }
+    .menu_item_nav
+    {
+     display:none;
+    }
+   @media only screen and (max-width: 900px)
+   {
+        .menu_item
+        {
+            display:none;
+        }
+
+        .menu_item_nav
+        {
+             display:block;
+             font-size:50px;
+        }
+   }
+</style>
+<head>
+</head>
+<body>
+  <!----     headers   ---->
+
+  <div style=" position: fixed; top: 5px;margin-top:10px;  width: 100%;">
+  <div style="display: flex;justify-content: space-between;align-items: center;">
+            <img style="width:100px;height:100px;padding-left:20px"
+                 src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/asturah_icon.png"/>
+            <div class ="menu_item" >
+                <ul style="list-style-type: none;display: flex;padding-right:40px">
+                    <li>Home</li>
+                    <li>Product</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+
+            <span class="menu_item_nav" onclick="openNav()">&#9776;</span>
+
+        </div>
+
+        <div id="mySidenav" class="sidenav">
+          <a  class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="#">Home</a>
+          <a href="#">Product</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+  </div>
+
+  <!----          ---->
+
+        <div style="display: flex;justify-content: center;padding-top: 340px;">
+
+             <img  src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/dry_fruits_title_image.png"/>
+
+
+            <div style="padding-left:80px;width: 30%;" class="background-img">
+                <p style="color:black;font-size:18px;">Welcome to</p>
+
+                <span style="font-size:50px;color:var(--selected_text_color);font-weight: 600;">ASTURAH <br>AL ARABIA</span>
+                <p style="line-height: 1.5;
+                    font-size: 17px;font-weight: 100;">
+                    Your Global Source for Premium Dry Fruits and Exotic Spices! At ASTURAH AL ARABIA, we take pride in being a leading international trading company based in Al Ras, Deira, Dubai. With a legacy of excellence spanning decades, we have established ourselves as a trusted name in the industry, offering a wide range of premium quality dry fruits and spices to clients worldwide.
+                </p>
+
+            </div>
+        </div>
+</body>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</html>
