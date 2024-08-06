@@ -270,6 +270,47 @@ background-repeat: no-repeat;
   background: lightgray;
     color: white;
     }
+
+
+
+
+     .triangle {
+      position: relative;
+      margin-top:-10px;
+      background-color: black;
+    }
+
+.triangle:before,
+.triangle:after {
+  content: '';
+  position: absolute;
+  background-color: inherit;
+}
+
+.triangle,
+.triangle:before,
+.triangle:after {
+  /*width:  7px;
+	height: 7px;*/
+  width: 15px;
+  height: 15px;
+  border-top-right-radius: 30%;
+}
+
+.triangle {
+  transform: skewX(-30deg) scale(1, .866);
+}
+
+.triangle:before {
+  transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+}
+
+.triangle:after {
+  transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+}
+
+
+
 </style>
 <head>
 </head>
@@ -921,9 +962,112 @@ background-repeat: no-repeat;
     </div>
     </div>
 
+               </div>
+     </div>
+
+<div>
+    <div style="    display: flex;
+    justify-content: center;
+    background: black;
+    color: white;
+    padding:80px 10px;
+    align-items: center;">
+        <span style="width: 50%;
+    font-size: 40px;
+line-height: 1.3em;">Ready to explore our premium dry fruits and spices or have specific requirements in mind?</span>
+           <div >
+                    <button class="curved_button">
+                        <div style="display:flex;">
+                                  <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#ffffff" d="M528.1 301.3l47.3-208C578.8 78.3 567.4 64 552 64H159.2l-9.2-44.8C147.8 8 137.9 0 126.5 0H24C10.7 0 0 10.7 0 24v16c0 13.3 10.7 24 24 24h69.9l70.2 343.4C147.3 417.1 136 435.2 136 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-15.7-6.4-29.8-16.8-40h209.6C430.4 426.2 424 440.3 424 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-22.2-12.9-41.3-31.6-50.4l5.5-24.3c3.4-15-8-29.3-23.4-29.3H218.1l-6.5-32h293.1c11.2 0 20.9-7.8 23.4-18.7z"/></svg>
+                                  <p style="padding-left:8px">CONTACT NOW</p>
+                        </div>
+
+                    </button>
+    </div>
+</div>
+    <div style="display: flex;
+    justify-content: center;">
+          <div class="triangle"></div>
 
 
+    </div>
+ <p style="font-size: 36px;
+             color: var(--selected_text_color);text-align: center;    font-weight: 500;">Get in touch with us today !
+</p>
+</div>
+            <!-----connect -->
+<div style="    display: flex;
+    justify-content: center;">
+     <div style="display:flex;margin-top:140px;">
+      <div style="    margin-right: 30px;">
+        <span style="font-size: 36px;
+             color: var(--selected_text_color);text-align: center;font-weight: 700;">Let's Connect</span>
+                 <p style="font-size: 30px;
+                     margin-top: 50px;
+                         margin-bottom: 4px;
+                    color: var(--selected_text_color);font-weight: 500;">Phone</p>
+                <span style="font-size: 20px;margin:1px;
+                    color: #8bc34a;font-weight: 500;">+971 58 117 2963 | 04 457 8596</span>
 
+
+             <p style="font-size: 30px;
+                     margin-top: 50px;
+                         margin-bottom: 4px;
+                    color: var(--selected_text_color);font-weight: 500;">Email</p>
+                <span style="font-size: 20px;margin:1px;
+                    color: #8bc34a;font-weight: 500;">
+                    Info@asturahalarabia.com <br>Admin@asturahalarabia.com</span>
+
+ <p style="font-size: 20px;
+                     margin-top: 50px;
+                         margin-bottom: 4px;
+                    color: var(--selected_text_color);font-weight: 500;opacity:0.7">For Direct Sales Enquiry</p>
+                <span style="font-size: 20px;margin:1px;
+                    color: #8bc34a;font-weight: 500;">
+                     Asturahalarabia@outlook.com</span>
+
+
+            <p style="font-size: 30px;
+                     margin-top: 50px;
+                         margin-bottom: 4px;
+                    color: var(--selected_text_color);font-weight: 500;">Address</p>
+                <span style="font-size: 20px;margin:1px;
+                    color: #8bc34a;font-weight: 500;">
+                   Office No: 206, Mohd. Sharif Fahim Building, Al Ras, Deira, Dubai – U.A.E</span>
+      </div>
+
+
+<div id="googleMap" style="width:50%;"></div>
+    <div style="background: black;
+    color: white;
+    width:50%;
+    padding: 50px 41px;">
+       <span style="font-size: 30px;">Request a Call Back</span>
+
+        <br>
+            <br>
+            <br>
+        Name<span style="color:red;">*</span>
+           <br>
+        <input type="text" style="height: 50px;" >
+
+
+             <br>
+            <br>
+            <br>
+        Email<span style="color:red;">*</span>
+           <br>
+        <input type="text" style="height: 50px;" >
+
+             <br>
+            <br>
+            <br>
+        Contact<span style="color:red;">*</span>
+           <br>
+        <input type="text" style="height: 50px;" >
+    </div>
+  </div>
+</div>
 
 
 <a href="https://api.whatsapp.com/send?phone=971502122362&text=Hello ASTURAH AL ARABIA! I Would like to know more about." class="float" target="_blank">
@@ -932,6 +1076,13 @@ background-repeat: no-repeat;
 </body>
 
 <script>
+    function myMap() {
+var mapProp= {
+  center:new google.maps.LatLng(51.508742,-0.120850),
+  zoom:5,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+}
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
 }
@@ -940,4 +1091,5 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
 </html>
