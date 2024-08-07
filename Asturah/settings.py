@@ -68,7 +68,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'Asturah.wsgi.application'
+WSGI_APPLICATION = 'Asturah.wsgi.app'
 
 
 # Database
