@@ -7,6 +7,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
+       .width_and_margin_top
+            {
+            width: 404px;
+            }
+.30_to_no_width
+            {
+               width: 15%;
+            }
+    .footer_item
+    {
+     display: flex;
+    width:90%;
+    padding-top:90px;
+    justify-content: space-between;
+    align-items: flex-start;
+    font-size: 19px;
+
+    color: #b5b5b5;
+    }
     .flavour_sector
     {
         display: flex;
@@ -134,8 +153,20 @@ background-repeat: no-repeat;
 
     @media only screen and (max-width: 1010px)
     {
-
-
+       .width_and_margin_top
+            {
+            width: 100%;
+            margin-top:20px;
+            }
+.30_to_no_width
+            {
+               width: 100%;
+            }
+  .footer_item
+    {
+    flex-direction: column;
+    margin-left:40px;
+    }
     .flavour_sector
     {
      display: flex;
@@ -966,10 +997,11 @@ line-height: 1.3em;">Ready to explore our premium dry fruits and spices or have 
 </p>
 </div>
             <!-----connect -->
-<div style="    display: flex;
-    justify-content: center;">
+<div style="display: flex;
+    justify-content: center;" >
      <div style="display:flex;margin-top:140px;">
       <div style="    margin-right: 30px;">
+
         <span style="font-size: 36px;
              color: #c59742;text-align: center;font-weight: 700;">Let's Connect</span>
                  <p style="font-size: 30px;
@@ -1049,16 +1081,10 @@ line-height: 1.3em;">Ready to explore our premium dry fruits and spices or have 
 </div>
 
 <div style="margin-top:10em; background: black;    margin-left: -8px; margin-right: -8px;">
-        <div style="
-    display: flex;
-    width:90%;
-    padding-top:90px;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 19px;
+        <div class="footer_item">
 
-    color: #b5b5b5;">
-            <div style="width: 15%;padding:30px;">
+
+            <div style="padding:30px;" class="30_to_no_width" >
                  <img width="100px" height="100px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/yo_nuts_image.png"/>
                 <p>YO!  NUTS  </p>
                 <p>Yo! Nuts is a young brand in UAE that brings Chocolates, Candies, Nuts, Dried Fruits and many more </p>
@@ -1071,8 +1097,10 @@ line-height: 1.3em;">Ready to explore our premium dry fruits and spices or have 
                       <span style="margin:3px">Home</span>
                       <span style="margin:3px">Products</span>
                 </div>
+
+
                 <div>
-                       <div style="display: flex;flex-direction: column;width: 404px;">
+                       <div style="display: flex;flex-direction: column;" class="width_and_margin_top">
                     <span style="color:white;font-size:40px;margin-bottom:20px;">Contact Us</span>
                     <p>
                         Office: <span style=" color: #c59742">M R K Building, Omar Bin Al Khattab Road Dubai, United Arab Emirates</span>
