@@ -239,7 +239,7 @@ background-repeat: no-repeat;
      .market_quote {
         padding: 2em;
         border-radius: .3em;
-        box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+
         display:flex;
         height: 21em;
         color:black;
@@ -364,10 +364,10 @@ background-repeat: no-repeat;
 </style>
 <head>
 </head>
-<body>
+<body style="margin:0px;">
   <!----     headers   ---->
 
-  <div style=" position: fixed; top: 0px;background:#ffffffeb;padding-top:15px;  width: 100%;">
+  <div style=" position: fixed; top: 0px;background:#80808042;padding-top:15px;  width: 100%;">
   <div style="display: flex;justify-content: space-between;align-items: center;">
             <img style="width:100px;height:100px;padding-left:20px"
                  src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/yo_nuts_image.png"/>
@@ -514,35 +514,43 @@ background-repeat: no-repeat;
 
    <!----       item listing           ------>
 
-  <div style="width:100%; margin-top:150px">
-        <img width="250px" height="250px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/dry_fruits_title.png"/>
-            <div style="background: #80808042;
-                        margin-top: -200px;
-                        margin-left: 10px;
-                        padding:80px;
-                        border-radius:10px;
-                        ">
-                <div style="display: flex;
-                    justify-content: space-between;">
-                    <div></div>
-                    <span style="font-size: 50px;">PRODUCTS</span>
-                    <button style="background: #8bc34a;
-                                color: white;
-                                padding: 5px 35px;
-                                border: none;
-                                border-radius: 10px;">
-                        KNOW MORE</button>
-                </div>
+<!--  <div style="width:100%; margin-top:150px">-->
+<!--        <img width="250px" height="250px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/dry_fruits_title.png"/>-->
+<!--            <div style="-->
+<!--                        margin-top: -200px;-->
+<!--                        margin-left: 10px;-->
+<!--                        padding:80px;-->
+<!--                        border-radius:10px;-->
+<!--                        ">-->
+<!--                <div style="display: flex;-->
+<!--                    justify-content: space-between;">-->
+<!--                    <div></div>-->
+<!--                    <span style="font-size: 50px;">PRODUCTS</span>-->
+<!--                    <button style="background: #8bc34a;-->
+<!--                                color: white;-->
+<!--                                padding: 5px 35px;-->
+<!--                                border: none;-->
+<!--                                border-radius: 10px;">-->
+<!--                        KNOW MORE</button>-->
+<!--                </div>-->
 
-        </div>
-      <!--- basil leave -->
-        <div style="display:flex;justify-content: space-around;">
-            <img width="250px" height="100px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/basil_leaf.png"/>
+<!--        </div>-->
+<!--      &lt;!&ndash;- basil leave &ndash;&gt;-->
+<!--        <div style="display:flex;justify-content: space-around;">-->
+<!--            <img width="250px" height="100px" style="margin:50px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/basil_leaf.png"/>-->
 
-        </div>
-               <div style="background: #80808042;margin-top: -100px;">
+<!--        </div>-->
+
+               <div >
                     <div style="padding-top:130px;">
-
+                        <div style="display: flex;
+                                    flex-direction: column;
+                                    align-items: center;">
+                                <div style="color:#42899e;font-weight: bold;    line-height: 1.375em;
+                                    text-align: center;
+                                    font-size: 28px;">PRODUCTS</div>
+                        <div style="margin-top:40px;">Reliable merchandise with a diverse range of sizes, qualities, and countries of origin</div>
+                        </div>
             <div class="market_container">
 
                 <div class="market_quote">
@@ -551,11 +559,11 @@ background-repeat: no-repeat;
                                                     background-repeat: no-repeat;
                                                     background-size: 200px;
                                                     width: 100%;
-                                                    background-position: right;
+                                                   background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;
+                                        <p style="font-size: 35px;text-align: center;color:#42899e;
                                     margin-top: 8px;">Almonds kernel</p>
-                                  <button style="background: var(--colorAccent);
+                                  <button style="display:none;background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
                                                  border-radius: 10px;padding: 10px 25px;">
@@ -575,12 +583,13 @@ background-repeat: no-repeat;
                                                     background-repeat: no-repeat;
                                                     background-size: 200px;
                                                     width: 100%;
-                                                    background-position: right;
+                                                    background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;
+                                        <p style="font-size: 35px;text-align: center;color:#42899e;
                                     margin-top: 8px;">Almond Inshell</p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
+                                                 display:none;
                                                      margin-left: -20px;
                                                  border-radius: 10px;padding: 10px 25px;">
                                       <div style="display:flex;align-items: center;">
@@ -597,11 +606,11 @@ background-repeat: no-repeat;
                                                     background-repeat: no-repeat;
                                                     background-size: 200px;
                                                     width: 100%;
-                                                    background-position: right;
+                                                    background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;
+                                        <p style="font-size: 35px;text-align: center;color:#42899e;
                                     margin-top: 8px;">Cashew Kernel</p>
-                                  <button style="background: var(--colorAccent);
+                                  <button style="display:none;background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
                                                  border-radius: 10px;padding: 10px 25px;">
@@ -630,12 +639,13 @@ background-repeat: no-repeat;
                                             background-repeat: no-repeat;
                                             background-size: 200px;
                                             width: 100%;
-                                            background-position: right;
+                                            background-position: center;
                                             background-position-y: bottom;">
-                                <p style="font-size: 35px;text-align: center;  margin-top: 8px;">Inshell Pistachio</p>
+                                <p style="font-size: 35px;text-align: center;  margin-top: 8px;color:#42899e;">Inshell Pistachio</p>
                           <button style="background: var(--colorAccent);
                                          border: none;color:white;
                                              margin-left: -20px;
+                                             display:none;
                                          border-radius: 10px;padding: 10px 25px;">
                               <div style="display:flex;align-items: center;">
                                 <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -650,10 +660,10 @@ background-repeat: no-repeat;
                                             background-repeat: no-repeat;
                                             background-size: 200px;
                                             width: 100%;
-                                            background-position: right;
+                                            background-position: center;
                                             background-position-y: bottom;">
-                                <p style="font-size: 35px;text-align: center;  margin-top: 8px;">Pistachio kernel </p>
-                          <button style="background: var(--colorAccent);
+                                <p style="font-size: 35px;text-align: center;  margin-top: 8px;color:#42899e;">Pistachio kernel </p>
+                          <button style="display:none;background: var(--colorAccent);
                                          border: none;color:white;
                                              margin-left: -20px;
                                          border-radius: 10px;padding: 10px 25px;">
@@ -669,12 +679,13 @@ background-repeat: no-repeat;
                                                     background-repeat: no-repeat;
                                                     background-size: 200px;
                                                     width: 100%;
-                                                    background-position: right;
+                                                    background-position: center;
                                                     background-position-y: bottom;">
                                         <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;">Wallnut Inshell</p>
+                                    margin-top: 8px;color:#42899e;">Wallnut Inshell</p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
+                                                 display:none;
                                                      margin-left: -20px;
                                                  border-radius: 10px;padding: 10px 25px;">
                                       <div style="display:flex;align-items: center;">
@@ -696,12 +707,13 @@ background-repeat: no-repeat;
                                                     background-repeat: no-repeat;
                                                     background-size: 200px;
                                                     width: 100%;
-                                                    background-position: right;
+                                                    background-position: center;
                                                     background-position-y: bottom;">
                                         <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;">Wallnut Kernel</p>
+                                    margin-top: 8px;color:#42899e;">Wallnut Kernel</p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
+                                                 display:none;
                                                      margin-left: -20px;
                                                  border-radius: 10px;padding: 10px 25px;">
                                       <div style="display:flex;align-items: center;">
@@ -720,13 +732,14 @@ background-repeat: no-repeat;
                                                     background-repeat: no-repeat;
                                                     background-size: 200px;
                                                     width: 100%;
-                                                    background-position: right;
+                                                    background-position: center;
                                                     background-position-y: bottom;">
                                         <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;">Golden Raisins </p>
+                                    margin-top: 8px;color:#42899e;">Golden Raisins </p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
+                                                     display:none;
                                                  border-radius: 10px;padding: 10px 25px;">
                                       <div style="display:flex;align-items: center;">
                                         <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -742,13 +755,14 @@ background-repeat: no-repeat;
                                                     background-repeat: no-repeat;
                                                     background-size: 200px;
                                                     width: 100%;
-                                                    background-position: right;
+                                                    background-position: center;
                                                     background-position-y: bottom;">
                                         <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;">Black raisins</p>
+                                    margin-top: 8px;color:#42899e;">Black raisins</p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
+                                                     display:none;
                                                  border-radius: 10px;padding: 10px 25px;">
                                       <div style="display:flex;align-items: center;">
                                         <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -771,13 +785,14 @@ background-repeat: no-repeat;
                                                                     background-repeat: no-repeat;
                                                                     background-size: 200px;
                                                                     width: 100%;
-                                                                    background-position: right;
+                                                                    background-position: center;
                                                                     background-position-y: bottom;">
                                                         <p style="font-size: 35px;text-align: center;
-                                                    margin-top: 8px;">Coffee</p>
+                                                    margin-top: 8px;color:#42899e;">Coffee</p>
                                                   <button style="background: var(--colorAccent);
                                                                  border: none;color:white;
                                                                      margin-left: -20px;
+                                                                     display:none;
                                                                  border-radius: 10px;padding: 10px 25px;">
                                                       <div style="display:flex;align-items: center;">
                                                         <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -795,13 +810,14 @@ background-repeat: no-repeat;
                                                                     background-repeat: no-repeat;
                                                                     background-size: 200px;
                                                                     width: 100%;
-                                                                    background-position: right;
+                                                                    background-position: center;
                                                                     background-position-y: bottom;">
                                                         <p style="font-size: 35px;text-align: center;
-                                                    margin-top: 8px;">Cardamom </p>
+                                                    margin-top: 8px;color:#42899e;">Cardamom </p>
                                                   <button style="background: var(--colorAccent);
                                                                  border: none;color:white;
                                                                      margin-left: -20px;
+                                                                     display:none;
                                                                  border-radius: 10px;padding: 10px 25px;">
                                                       <div style="display:flex;align-items: center;">
                                                         <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -817,13 +833,14 @@ background-repeat: no-repeat;
                                                                     background-repeat: no-repeat;
                                                                     background-size: 200px;
                                                                     width: 100%;
-                                                                    background-position: right;
+                                                                    background-position: center;
                                                                     background-position-y: bottom;">
                                                         <p style="font-size: 35px;text-align: center;
-                                                    margin-top: 8px;">Black pepper</p>
+                                                    margin-top: 8px;color:#42899e;">Black pepper</p>
                                                   <button style="background: var(--colorAccent);
                                                                  border: none;color:white;
                                                                      margin-left: -20px;
+                                                                     display:none;
                                                                  border-radius: 10px;padding: 10px 25px;">
                                                       <div style="display:flex;align-items: center;">
                                                         <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -844,13 +861,14 @@ background-repeat: no-repeat;
                                                             background-repeat: no-repeat;
                                                             background-size: 200px;
                                                             width: 100%;
-                                                            background-position: right;
+                                                            background-position: center;
                                                             background-position-y: bottom;">
                                                 <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;">Cumin Seed</p>
+                                            margin-top: 8px;color:#42899e;">Cumin Seed</p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
+                                                             display:none;
                                                          border-radius: 10px;padding: 10px 25px;">
                                               <div style="display:flex;align-items: center;">
                                                 <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -867,13 +885,14 @@ background-repeat: no-repeat;
                                                             background-repeat: no-repeat;
                                                             background-size: 200px;
                                                             width: 100%;
-                                                            background-position: right;
+                                                            background-position: center;
                                                             background-position-y: bottom;">
                                                 <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;">Turmeric </p>
+                                            margin-top: 8px;color:#42899e;">Turmeric </p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
+                                                             display:none;
                                                          border-radius: 10px;padding: 10px 25px;">
                                               <div style="display:flex;align-items: center;">
                                                 <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -889,13 +908,14 @@ background-repeat: no-repeat;
                                                             background-repeat: no-repeat;
                                                             background-size: 200px;
                                                             width: 100%;
-                                                            background-position: right;
+                                                            background-position: center;
                                                             background-position-y: bottom;">
                                                 <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;">Saffron</p>
+                                            margin-top: 8px;color:#42899e;">Saffron</p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
+                                                             display:none;
                                                          border-radius: 10px;padding: 10px 25px;">
                                               <div style="display:flex;align-items: center;">
                                                 <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -917,12 +937,13 @@ background-repeat: no-repeat;
                                                             background-repeat: no-repeat;
                                                             background-size: 350px;
                                                             width: 100%;
-                                                            background-position: right;
+                                                            background-position: center;
                                                             background-position-y: bottom;">
                                                 <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;">Yonut tin</p>
+                                            margin-top: 8px;color:#42899e;">Yonut tin</p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
+                                                         display:none;
                                                              margin-left: -20px;
                                                          border-radius: 10px;padding: 10px 25px;">
                                               <div style="display:flex;align-items: center;">
@@ -941,13 +962,14 @@ background-repeat: no-repeat;
                                                             background-repeat: no-repeat;
                                                             background-size: 200px;
                                                             width: 100%;
-                                                            background-position: right;
+                                                            background-position: center;
                                                             background-position-y: bottom;">
                                                 <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;">Yonut pouch </p>
+                                            margin-top: 8px;color:#42899e;">Yonut pouch </p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
+                                                             display:none;
                                                          border-radius: 10px;padding: 10px 25px;">
                                               <div style="display:flex;align-items: center;">
                                                 <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
@@ -970,178 +992,33 @@ background-repeat: no-repeat;
 
 
 
-<div>
-    <div style="    display: flex;
-    justify-content: center;
-    background: black;
-    color: white;
-    padding:80px 10px;
-    align-items: center;">
-        <span style="width: 50%;
-    font-size: 40px;
-line-height: 1.3em;">Ready to explore our premium dry fruits and spices or have specific requirements in mind?</span>
-           <div >
-                    <button class="curved_button">
-                        <div style="display:flex;">
-                                  <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="#ffffff" d="M528.1 301.3l47.3-208C578.8 78.3 567.4 64 552 64H159.2l-9.2-44.8C147.8 8 137.9 0 126.5 0H24C10.7 0 0 10.7 0 24v16c0 13.3 10.7 24 24 24h69.9l70.2 343.4C147.3 417.1 136 435.2 136 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-15.7-6.4-29.8-16.8-40h209.6C430.4 426.2 424 440.3 424 456c0 30.9 25.1 56 56 56s56-25.1 56-56c0-22.2-12.9-41.3-31.6-50.4l5.5-24.3c3.4-15-8-29.3-23.4-29.3H218.1l-6.5-32h293.1c11.2 0 20.9-7.8 23.4-18.7z"/></svg>
-                                  <p style="padding-left:8px">CONTACT NOW</p>
-                        </div>
+   <div style="    display: flex;
+    flex-direction: column;
+    align-items: center;
+}">
+           Yo nuts!
+      <span> kafla.ae@gmail.com</span>
+       <span> MOB:  +971 4 297 3383</span>
+      <span>  Office No: M R K Building, Omar Bin Al Khattab Road Dubai, United Arab Emirates</span>
+       </div>
+<div style="margin-top:10em; background: #80808042;    margin-left: -8px; margin-right: -8px;">
 
-                    </button>
-    </div>
-</div>
-    <div style="display: flex;
-    justify-content: center;">
-          <div class="triangle"></div>
-
-
-    </div>
- <p style="font-size: 36px;
-             color: #c59742;text-align: center;    font-weight: 500;">Get in touch with us today !
-</p>
-</div>
-            <!-----connect -->
-<div style="display: flex;
-    justify-content: center;" >
-     <div style="display:flex;margin-top:140px;" class="coloum_samll">
-      <div style="margin-right: 30px; margin-bottom: 30px;">
-
-        <span style="font-size: 36px;
-             color: #c59742;text-align: center;font-weight: 700;">Let's Connect</span>
-                 <p style="font-size: 30px;
-                     margin-top: 50px;
-                         margin-bottom: 4px;
-                    color:#c59742;font-weight: 500;">Phone</p>
-                <span style="font-size: 20px;margin:1px;
-                    color: #8bc34a;font-weight: 500;">+971 4 297 3383</span>
-
-
-             <p style="font-size: 30px;
-                     margin-top: 50px;
-                         margin-bottom: 4px;
-                    color: #c59742;font-weight: 500;">Email</p>
-                <span style="font-size: 20px;margin:1px;
-                    color: #8bc34a;font-weight: 500;">
-                    kafla.ae@gmail.com</span>
-                <p style="font-size: 20px;
-                     margin-top: 50px;
-                         margin-bottom: 4px;
-                    color: #c59742;font-weight: 500;opacity:0.7">For Direct Sales Enquiry</p>
-                <span style="font-size: 20px;margin:1px;
-                    color: #8bc34a;font-weight: 500;">
-                     kafla.ae@gmail.com </span>
-
-
-            <p style="font-size: 30px;
-                     margin-top: 50px;
-                         margin-bottom: 4px;
-                    color: #c59742;font-weight: 500;">Address</p>
-                <span style="font-size: 20px;margin:1px;
-                    color: #8bc34a;font-weight: 500;">
-                   Office No: M R K Building, Omar Bin Al Khattab Road Dubai, United Arab Emirates</span>
-      </div>
-
-<div style="display:flex;">
-<div id="googleMap" style="min-width:300px;"></div>
-    <div style="background: black;    color: white;    width:50%;    padding: 50px 41px;">
-       <span style="font-size: 30px;">Request a Call Back</span>
-
-        <br>
-            <br>
-            <br>
-        Name<span style="color:red;">*</span>
-           <br>
-        <input type="text" style="height: 50px;" >
-
-
-             <br>
-            <br>
-            <br>
-        Email<span style="color:red;">*</span>
-           <br>
-        <input type="text" style="height: 50px;" >
-
-             <br>
-            <br>
-            <br>
-        Contact<span style="color:red;">*</span>
-           <br>
-        <input type="text" style="height: 50px;" />
-        <br>
-           <button style="background: #8bc34a;
-                                color: white;
-                                margin-top:20px;
-                                padding: 15px 35px;
-                                border: none;
-                                border-radius: 10px;">
-                         Submit</button>
-    </div>
-</div>
-  </div>
-</div>
-
-<div style="margin-top:10em; background: black;    margin-left: -8px; margin-right: -8px;">
-        <div class="footer_item">
-
-
-            <div style="padding:30px;" class="30_to_no_width" >
-                 <img width="100px" height="100px" src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/yo_nuts_image.png"/>
-                <p>YO!  NUTS  </p>
-                <p>Yo! Nuts is a young brand in UAE that brings Chocolates, Candies, Nuts, Dried Fruits and many more </p>
-            </div>
-                <div style="display: flex;flex-direction: column;">
-                    <span style="color:white;font-size:40px;margin-bottom:20px;">Quick Links</span>
-                      <span style="margin:3px">About</span>
-                      <span style="margin:3px">Confirmation</span>
-                      <span style="margin:3px">Contact</span>
-                      <span style="margin:3px">Home</span>
-                      <span style="margin:3px">Products</span>
-                </div>
-
-
-                <div>
-                       <div style="display: flex;flex-direction: column;" class="width_and_margin_top">
-                    <span style="color:white;font-size:40px;margin-bottom:20px;">Contact Us</span>
-                    <p>
-                        Office: <span style=" color: #c59742">M R K Building, Omar Bin Al Khattab Road Dubai, United Arab Emirates</span>
-                    </p>
-                     <p>
-                        Phone: <span style=" color: #c59742">+971 4 297 3383 </span>
-                    </p>
-
-                     <p>
-                        Land Phone: <span style=" color:#c59742">+971 4 297 3383</span><br>
-                         Email: <span style=" color: #c59742"> kafla.ae@gmail.com </span>
-                    </p>
-                             <p>
-                        For Direct Sales Enquiry<br> <span style=" color: #c59742">kafla.ae@gmail.com </span>
-                    </p>
-                </div>
-                </div>
-        </div>
 
 <hr>
     <div style="display: flex;
-    justify-content: space-between;">
+       justify-content: center;
+    flex-direction: row;">
 
 
-    <div style="color:white;padding:40px;">
-        Copyright © 2023 | YO!  NUTS
+    <div style="color:black;padding:40px;">
+       ©2019 by Abed Khosh General Trading LLC.
 <br>
         <br>
-        <div style="    display: flex;
-    align-items: center;">
-             <span>Powered by  Kafla trading LLC</span>
 
-        </div>
 
     </div>
 
-      <div >
-                    <a href="#" class="fa transparent_background fa-facebook"></a>
-                    <a href="#" class="fa transparent_background fa-twitter"></a>
-                    <a href="#" class="fa transparent_background fa-instagram"></a>
-					</div>
+
 </div>
         </div>
 <a href="https://api.whatsapp.com/send?phone=971502122362&text=Hello ASTURAH AL ARABIA! I Would like to know more about." class="float" target="_blank">
