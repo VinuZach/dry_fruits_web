@@ -372,7 +372,20 @@
           from {opacity: .4}
           to {opacity: 1}
         }
+.prev, .next {
+  cursor: pointer;
 
+
+  width: auto;
+  padding: 16px;
+
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
 </style>
 <head>
 </head>
@@ -563,11 +576,20 @@
                                     align-items: center;">
 
 
-                             <img class="slides fade"
+
+<div style="display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;">
+         <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <div>
+                       <img class="slides fade"
                  src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/banner_images/banner_image1.png"/>
 
                               <img class="slides fade"
                  src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/banner_images/banner_image2.png"/>
+
+
 
                               <img class="slides fade"
                  src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/banner_images/banner_image3.png"/>
@@ -577,6 +599,9 @@
 
                                 <img class="slides fade"
                  src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/banner_images/banner_image5.png"/>
+    </div>
+<a class="next" onclick="plusSlides(1)">❯</a>
+</div>
                                 <div style="color:#42899e;font-weight: bold;    line-height: 1.375em;
                                     text-align: center;
                                     font-size: 28px;">PRODUCTS</div>
@@ -1012,6 +1037,9 @@
     flex-direction: column;
     align-items: center;
 }">
+
+            <img width="300px" height="300px"
+                 src="{{ request.scheme }}://{{ request.get_host }}//media//home_images/heart_super_healthy.jpeg"/>
            Yo nuts!
       <span> kafla.ae@gmail.com</span>
 
@@ -1047,21 +1075,40 @@
 <script>
 
      let slideIndex = 0;
-showSlides()
+    showSlides(slideIndex)
+    function plusSlides(n) {
+      showSlides( n);
+    }
 
-    function showSlides() {
+
+    function showSlides(n) {
       let i;
       let slides = document.getElementsByClassName("slides");
-        console.log(slideIndex)
+
       for (i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
       }
-      slideIndex++;
+        console.log(n)
+      if(n!=null)
+      {
+          slideIndex+=n
+          if(slideIndex<=0)
+            slideIndex=1;
+      }
+      else
+      {
+          slideIndex++;
+
+
+      }
       if (slideIndex > slides.length) {slideIndex = 1}
-
       slides[slideIndex-1].style.display = "block";
+            if(n==null||n==0)
+            {
+            console.log("ddd")
+            setTimeout(showSlides, 5000); // Change image every 2 seconds
+            }
 
-      setTimeout(showSlides, 5000); // Change image every 2 seconds
     }
 
 
