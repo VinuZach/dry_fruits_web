@@ -7,24 +7,31 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 <style>
-       .width_and_margin_top
-            {
-            width: 404px;
-            }
-.30_to_no_width
-            {
-               width: 15%;
-            }
+    .item_text
+    {
+        font-size: 35px;text-align: center;
+        margin-top: 8px;color:#42899e;
+    }
+
+    .width_and_margin_top
+    {
+        width: 404px;
+    }
+
+    .30_to_no_width
+    {
+        width: 15%;
+    }
+
     .footer_item
     {
-     display: flex;
-    width:90%;
-    padding-top:90px;
-    justify-content: space-between;
-    align-items: flex-start;
-    font-size: 19px;
-
-    color: #b5b5b5;
+        display: flex;
+        width:90%;
+        padding-top:90px;
+        justify-content: space-between;
+        align-items: flex-start;
+        font-size: 19px;
+        color: #b5b5b5;
     }
     .flavour_sector
     {
@@ -36,7 +43,7 @@
 
     .flavour_sector :first-child
     {
-        width:51%;
+      width:51%;
     }
 
     .quantity_section
@@ -45,16 +52,15 @@
         flex-wrap: nowrap;
         flex-direction: row;
         align-items: center;
-
         padding: 5% 12%;
         background:#f8f6f3;
     }
     .title_text
     {
-    padding-left:80px;width: 30%;
+         padding-left:80px;width: 30%;
     }
-     .curved_button
-      {
+    .curved_button
+    {
         background-color: #c59742;
         border: none;
         color: white;
@@ -65,7 +71,7 @@
         font-size: 13px;
         margin: 4px 2px;
         border-radius: 8px;
-      }
+    }
 
 
     .title_content
@@ -74,300 +80,282 @@
     }
     .float
     {
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	right:40px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-  font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-  z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-.{
-    background-image: linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0.5)),url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/pista_background.png');
-background-repeat: no-repeat;
-
-    background-size: 52%;
-    background-position: right;
-    background-position-y: bottom;
-
-}
-.sidenav {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  right: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav a:hover {
-  color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-    .menu_item li
-    {
-        padding:20px;
-        color: var(--unselected_text_color);
-        font-size:18px;
-        font-style: normal;
-
+        position:fixed;
+        width:60px;
+        height:60px;
+        bottom:40px;
+        right:40px;
+        background-color:#25d366;
+        color:#FFF;
+        border-radius:50px;
+        text-align:center;
+        font-size:30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index:100;
     }
 
-      .menu_item li:hover
-    {
-        color: #c59742;
+    .my-float{
+         margin-top:16px;
     }
-    .menu_item_nav
+
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+        .menu_item li
+        {
+            padding:20px;
+            color: var(--unselected_text_color);
+            font-size:18px;
+            font-style: normal;
+        }
+
+        .menu_item li:hover
+        {
+             color: #c59742;
+        }
+        .menu_item_nav
+        {
+          display:none;
+        }
+        .market_container
+        {
+        padding: 3em;
+        display: grid;
+        grid-gap: 0.5em;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+
+    @media  (any-pointer: coarse)
     {
-     display:none;
+            .market_container
+            {
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            }
     }
-    .market_container
-    {
-
-     padding: 3em;
-    display: grid;
-
-    grid-gap: 0.5em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-    }
- @media  (any-pointer: coarse)
-{
-   .market_container
-    {
-
-   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
 
 
-
-    }
-}
     @media only screen and (max-width: 1010px)
     {
+        .coloum_samll
+        {
+        flex-direction: column;
+        }
 
+        .width_and_margin_top
+        {
+        width: 100%;
+        margin-top:20px;
+        }
 
-    .coloum_samll
-{
-    flex-direction: column;
-}
-       .width_and_margin_top
-            {
-            width: 100%;
-            margin-top:20px;
-            }
-.30_to_no_width
-            {
-               width: 100%;
-            }
-  .footer_item
-    {
-    flex-direction: column;
-    margin-left:40px;
-    }
-    .flavour_sector
-    {
-     display: flex;
-    flex-direction: column;
-    margin: 30px;
-    justify-content: center;
-    }
+        .30_to_no_width
+        {
+             width: 100%;
+        }
+        .footer_item
+        {
+            flex-direction: column;
+            margin-left:40px;
+        }
+
+        .flavour_sector
+        {
+            display: flex;
+            flex-direction: column;
+            margin: 30px;
+            justify-content: center;
+        }
 
         .flavour_sector :first-child
-    {
-        width:100%;
-    }
-    .quantity_section
+        {
+          width:100%;
+        }
+
+        .quantity_section
         {
             display: flex;
             flex-wrap: nowrap;
-                flex-direction: column;
-                    padding: 0 10%;
+            flex-direction: column;
+            padding: 0 10%;
             align-items: center;
-
         }
+
         .quantity_section_item
         {
             display: flex;
             flex-wrap: nowrap;
-                flex-direction: column;
-
+            flex-direction: column;
             align-items: center;
         }
 
         .menu_item
         {
-            display:none;
+             display:none;
         }
 
         .menu_item_nav
         {
-             display:block;
-             font-size:50px;
-             margin:50px;;
+            display:block;
+            font-size:50px;
+            margin:50px;;
         }
 
         .title_content
         {
-        display: flex;justify-content: center;padding-top: 340px;
+            display: flex;justify-content: center;padding-top: 340px;
             flex-direction: column-reverse;
         }
-         .title_text
-            {
-            padding-left:80px;width: 80%;
-            }
-    }
 
-    .item_container
-    {
-
-     padding: 3em;
-    display: grid;
-    margin-top:150px;
-    grid-gap: 0.5em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-
-    }
-     .market_quote {
-        padding: 2em;
-        border-radius: .3em;
-
-        display:flex;
-        height: 21em;
-        color:black;
-        background:white;
-}
-
-
-
-.container {
-    padding: 3em;
-    display: grid;
-    margin-top:150px;
-    grid-gap: 0.5em;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
- background:#333333;
-
-    .quote {
-        padding: 2em;
-        border-radius: .3em;
-        box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
-        display:flex;
-        color:white;
-        background:#4b4b4b;
-
-        p {
-            margin-top: 0;
+        .title_text
+        {
+        padding-left:80px;width: 80%;
         }
+    }
+
+        .item_container
+        {
+            padding: 3em;
+            display: grid;
+            margin-top:150px;
+            grid-gap: 0.5em;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .market_quote {
+            padding: 2em;
+            border-radius: .3em;
+            display:flex;
+            height: 21em;
+            color:black;
+            background:white;
+        }
+
+
+            .container {
+                padding: 3em;
+                display: grid;
+                margin-top:150px;
+                grid-gap: 0.5em;
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+                background:#333333;
+
+            .quote {
+                padding: 2em;
+                border-radius: .3em;
+                box-shadow: 10px 10px 30px rgba(0,0,0,0.1);
+                display:flex;
+                color:white;
+                background:#4b4b4b;
+
+            p {
+                 margin-top: 0;
+               }
 
         span {
             font-weight: bold;
             position: relative;
             margin-left: 15px;
+        &:before {
+            content: '';
+            position: absolute;
+            height: 1px;
+            width: 10px;
+            border-bottom: 1px solid black;
+            top: 10px;
+            left: -15px;
 
-            &:before {
-                content: '';
-                position: absolute;
-                height: 1px;
-                width: 10px;
-                border-bottom: 1px solid black;
-                top: 10px;
-                left: -15px;
-
+                }
             }
-        }
     }
+    }
+    .rounded_grey
+    {
+            padding: 15px;
+            font-size: 15px;
+            width: 15px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+            border-radius: 50%;
+            background: lightgray;
+            color: white;
+    }
+
+
+    .transparent_background
+    {
+        padding: 15px;
+        font-size: 15px;
+        width: 15px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+        color: white;
+    }
+
+
+.triangle {
+    position: relative;
+    margin-top:-10px;
+    background-color: black;
 }
-.rounded_grey
-    {
-  padding: 15px;
-  font-size: 15px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 50%;
-  background: lightgray;
-    color: white;
-    }
-
-
-.transparent_background
-    {
-  padding: 15px;
-  font-size: 15px;
-  width: 15px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-
-
-    color: white;
-    }
-
-
-     .triangle {
-      position: relative;
-      margin-top:-10px;
-      background-color: black;
-    }
 
 .triangle:before,
 .triangle:after {
-  content: '';
-  position: absolute;
-  background-color: inherit;
+    content: '';
+    position: absolute;
+    background-color: inherit;
 }
 
 }
 .triangle,
 .triangle:before,
 .triangle:after {
-  /*width:  7px;
-	height: 7px;*/
-  width: 15px;
-  height: 15px;
-  border-top-right-radius: 30%;
+    width: 15px;
+    height: 15px;
+    border-top-right-radius: 30%;
 }
 
 .triangle {
-  transform: skewX(-30deg) scale(1, .866);
+    transform: skewX(-30deg) scale(1, .866);
 }
 
 .triangle:before {
-  transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
+    transform: rotate(-135deg) skewX(-45deg) scale(1.414, .707) translate(0, -50%);
 }
 
 .triangle:after {
-  transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
+    transform: rotate(135deg) skewY(-45deg) scale(.707, 1.414) translate(50%);
 }
 
 
@@ -572,8 +560,7 @@ background-repeat: no-repeat;
                                                     width: 100%;
                                                    background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;color:#42899e;
-                                    margin-top: 8px;">Almond kernel</p>
+                                        <p class="item_text">Almond kernel</p>
                                   <button style="display:none;background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
@@ -596,8 +583,7 @@ background-repeat: no-repeat;
                                                     width: 100%;
                                                     background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;color:#42899e;
-                                    margin-top: 8px;">Almond Inshell</p>
+                                        <p class="item_text">Almond Inshell</p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
                                                  display:none;
@@ -619,8 +605,7 @@ background-repeat: no-repeat;
                                                     width: 100%;
                                                     background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;color:#42899e;
-                                    margin-top: 8px;">Cashew Kernel</p>
+                                        <p class="item_text">Cashew Kernel</p>
                                   <button style="display:none;background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
@@ -652,7 +637,7 @@ background-repeat: no-repeat;
                                             width: 100%;
                                             background-position: center;
                                             background-position-y: bottom;">
-                                <p style="font-size: 35px;text-align: center;  margin-top: 8px;color:#42899e;">Inshell Pistachio</p>
+                                <p class="item_text">Inshell Pistachio</p>
                           <button style="background: var(--colorAccent);
                                          border: none;color:white;
                                              margin-left: -20px;
@@ -673,7 +658,7 @@ background-repeat: no-repeat;
                                             width: 100%;
                                             background-position: center;
                                             background-position-y: bottom;">
-                                <p style="font-size: 35px;text-align: center;  margin-top: 8px;color:#42899e;">Pistachio kernel </p>
+                                <p class="item_text">Pistachio kernel </p>
                           <button style="display:none;background: var(--colorAccent);
                                          border: none;color:white;
                                              margin-left: -20px;
@@ -692,8 +677,7 @@ background-repeat: no-repeat;
                                                     width: 100%;
                                                     background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;color:#42899e;">Walnut inshell</p>
+                                        <p class="item_text">Walnut inshell</p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
                                                  display:none;
@@ -720,8 +704,7 @@ background-repeat: no-repeat;
                                                     width: 100%;
                                                     background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;color:#42899e;">Walnut kernel </p>
+                                        <p class="item_text">Walnut kernel </p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
                                                  display:none;
@@ -745,8 +728,7 @@ background-repeat: no-repeat;
                                                     width: 100%;
                                                     background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;color:#42899e;">Golden Raisins </p>
+                                        <p class="item_text">Golden Raisins </p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
@@ -768,8 +750,7 @@ background-repeat: no-repeat;
                                                     width: 100%;
                                                     background-position: center;
                                                     background-position-y: bottom;">
-                                        <p style="font-size: 35px;text-align: center;
-                                    margin-top: 8px;color:#42899e;">Black raisins</p>
+                                        <p class="item_text">Black raisins</p>
                                   <button style="background: var(--colorAccent);
                                                  border: none;color:white;
                                                      margin-left: -20px;
@@ -798,8 +779,7 @@ background-repeat: no-repeat;
                                                                     width: 100%;
                                                                     background-position: center;
                                                                     background-position-y: bottom;">
-                                                        <p style="font-size: 35px;text-align: center;
-                                                    margin-top: 8px;color:#42899e;">Coffee</p>
+                                                        <p class="item_text">Coffee</p>
                                                   <button style="background: var(--colorAccent);
                                                                  border: none;color:white;
                                                                      margin-left: -20px;
@@ -823,8 +803,7 @@ background-repeat: no-repeat;
                                                                     width: 100%;
                                                                     background-position: center;
                                                                     background-position-y: bottom;">
-                                                        <p style="font-size: 35px;text-align: center;
-                                                    margin-top: 8px;color:#42899e;">Cardamom </p>
+                                                        <p class="item_text">Cardamom </p>
                                                   <button style="background: var(--colorAccent);
                                                                  border: none;color:white;
                                                                      margin-left: -20px;
@@ -846,8 +825,7 @@ background-repeat: no-repeat;
                                                                     width: 100%;
                                                                     background-position: center;
                                                                     background-position-y: bottom;">
-                                                        <p style="font-size: 35px;text-align: center;
-                                                    margin-top: 8px;color:#42899e;">Black pepper</p>
+                                                        <p class="item_text">Black pepper</p>
                                                   <button style="background: var(--colorAccent);
                                                                  border: none;color:white;
                                                                      margin-left: -20px;
@@ -874,8 +852,7 @@ background-repeat: no-repeat;
                                                             width: 100%;
                                                             background-position: center;
                                                             background-position-y: bottom;">
-                                                <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;color:#42899e;">Cumin Seed</p>
+                                                <p class="item_text">Cumin Seed</p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
@@ -898,8 +875,7 @@ background-repeat: no-repeat;
                                                             width: 100%;
                                                             background-position: center;
                                                             background-position-y: bottom;">
-                                                <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;color:#42899e;">Turmeric </p>
+                                                <p class="item_text">Turmeric </p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
@@ -921,8 +897,7 @@ background-repeat: no-repeat;
                                                             width: 100%;
                                                             background-position: center;
                                                             background-position-y: bottom;">
-                                                <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;color:#42899e;">Saffron</p>
+                                                <p class="item_text">Saffron</p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
@@ -950,8 +925,7 @@ background-repeat: no-repeat;
                                                             width: 100%;
                                                             background-position: center;
                                                             background-position-y: bottom;">
-                                                <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;color:#42899e;">Yonut tin</p>
+                                                <p class="item_text">Yonut tin</p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                          display:none;
@@ -969,14 +943,13 @@ background-repeat: no-repeat;
 
                         <div class="market_quote">
 
-                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/cardamom.png');
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//home_images/yo_nuts_pouch.jpeg');
                                                             background-repeat: no-repeat;
                                                             background-size: 200px;
                                                             width: 100%;
                                                             background-position: center;
                                                             background-position-y: bottom;">
-                                                <p style="font-size: 35px;text-align: center;
-                                            margin-top: 8px;color:#42899e;">Yonut pouch </p>
+                                                <p class="item_text">Yonut pouch </p>
                                           <button style="background: var(--colorAccent);
                                                          border: none;color:white;
                                                              margin-left: -20px;
@@ -1009,7 +982,9 @@ background-repeat: no-repeat;
 }">
            Yo nuts!
       <span> kafla.ae@gmail.com</span>
-       <span> MOB:  +971 4 297 3383</span>
+
+ <span>  Tel : 04 8848146</span>
+       <span> Mob : 056 8599818</span>
       <span>  Office No: M R K Building, Omar Bin Al Khattab Road Dubai, United Arab Emirates</span>
        </div>
 <div style="margin-top:10em; background: #80808042;    margin-left: -8px; margin-right: -8px;">
