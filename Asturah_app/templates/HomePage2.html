@@ -29,24 +29,11 @@
   user-select: none;
 }
 </style>
- <h2 style="font-size: 60px;text-align: center;
-        color:#42899e;">Kafla Trading LLC</h2>
-    <div style="text-align:center;display: flex;
-                 flex-direction: column;
-                 align-items: center;">
-        <p style="color: gray;font-weight: 100;font-size: 18px;">
-        Quality Foodstuff since 1997
-        </p>
-        <p style="color: black;font-weight: 100;font-size: 15px;width:70%;line-height: 1.6;">
-        Established in 1997, Abed Khosh General Trading has been supplying its clients with the very best food products tailored to their needs. We are one of the major distributors of agricultural commodities, exporting to over 20 countries.
-        </p>
-
-
 
 <div style="display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top:100px;
+
     justify-content: space-around;">
          <a class="prev" onclick="plusSlides(-1)">❮</a>
           <div>
@@ -72,6 +59,22 @@
 
 </div>
 
+ <h2 style="font-size: 60px;text-align: center;
+        color:#42899e;">Kafla Trading LLC</h2>
+    <div style="text-align:center;display: flex;
+                 flex-direction: column;
+                 align-items: center;">
+        <p style="color: gray;font-weight: 100;font-size: 18px;">
+        Quality Foodstuff since 1997
+        </p>
+        <p style="color: black;font-weight: 100;font-size: 15px;width:70%;line-height: 1.6;margin-bottom:70px;">
+        Established in 1997, Abed Khosh General Trading has been supplying its clients with the very best food products tailored to their needs. We are one of the major distributors of agricultural commodities, exporting to over 20 countries.
+        </p>
+
+
+
+
+
          <p style="
     background: #42899e;
     height: 200px;
@@ -88,19 +91,13 @@
 padding:100px 0px;
     justify-content: center;">
 
-       <img height="300px"
-                       src="{{ request.scheme }}://{{ request.get_host }}/media/home_page_images/yo_nuts_tin1.png"/>
-       <img height="300px" style="margin-top:140px;"
-                       src="{{ request.scheme }}://{{ request.get_host }}/media/home_page_images/yo_nuts_tin2.png"/>
+       <img height="500px"
+                       src="{{ request.scheme }}://{{ request.get_host }}/media/home_page_images/dry_fruits_collection.png"/>
+       <img height="300px" style="margin-top:140px;transform: rotate(41deg);"
+                       src="{{ request.scheme }}://{{ request.get_host }}/media/home_page_images/dry_fruits_collection2.png"/>
 
 
 </div>
-        <div style="background:grey;width:100%;display: flex;
-    justify-content: center;">
-  <img height="500px"
-                       src="{{ request.scheme }}://{{ request.get_host }}/media/home_page_images/yo_nuts_pouch.png"/>
-        </div>
-
     </div>
 <script>
     let slideIndex = 0;
