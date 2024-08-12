@@ -118,9 +118,9 @@
 <body style="margin:0px;">
   <!----     headers   ---->
 
-  <div style=" position: fixed; top: 0px;background:#80808042;padding-top:15px;  width: 100%;">
+  <div style=" position: fixed; top: 0px;background:white;padding-top:15px;     z-index: 10; width: 100%;">
   <div style="display: flex;justify-content: space-between;align-items: center;">
-            <img style="width:180px;height:30px;padding-left:20px"
+            <img style="width:200px;height:50px;padding-left:20px"
                  src="{{ request.scheme }}://{{ request.get_host }}/media//product_page_images/kafla_logo.png"/>
 
 
@@ -145,7 +145,7 @@
           <a href="#">Contact</a>
         </div>
   </div>
-<div style="padding-top:200px;">
+<div >
    {% block userinfo %}
 
 {% endblock %}
