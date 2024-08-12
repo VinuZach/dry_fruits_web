@@ -2,7 +2,7 @@
 {% block userinfo %}
 <style>
     .slides{
-            margin-top:20px;border-radius: 30px;
+            margin-top:20px;
             display:none;
            width: 650px;
     object-fit: cover;
@@ -30,41 +30,59 @@
   border-radius: 0 3px 3px 0;
   user-select: none;
 }
+
+    .banner
+    {
+    display: flex;
+    flex-direction: row;
+    margin-top:130px;
+    align-items: center;
+    padding: 0px 100px;
+    justify-content: space-between;
+    }
+          @media only screen and (max-width: 1010px)
+    {
+
+      .banner
+    {
+    display: flex;
+    flex-direction: row;
+    margin-top:200px;
+    align-items: center;
+    padding: 0px 100px;
+    justify-content: space-between;
+    }
+    }
 </style>
 <div>
 
 
-<div style="display: flex;
-    flex-direction: row;
-    margin-top:100px;
-    align-items: center;
-    padding: 0px 100px;
-    justify-content: space-between;">
+<div class="banner">
          <a class="prev" onclick="plusSlides(-1)">❮</a>
           <div>
 
 
-                  <img height="180px"  class="slides fade" style="    margin-bottom:0px"
+                  <img height="200px"  class="slides fade" style="    margin-bottom:0px"
                        src="{{ request.scheme }}://{{ request.get_host }}/media/product_page_images/banner_images/banner_image6.jpg"/>
 
-                             <img height="180px" class="slides fade"
+                             <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image1.jpeg"/>
 
 
-                                    <img height="180px" class="slides fade"
+                                    <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image2.png"/>
 
 
 
-                                    <img height="180px" class="slides fade"
+                                    <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image3.png"/>
 
-                                    <img height="180px" class="slides fade"
+                                    <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image4.png"/>
  <img height="180px"  class="slides fade" style="    margin-bottom:0px"
                        src="{{ request.scheme }}://{{ request.get_host }}/media/product_page_images/banner_images/banner_image8.jpg"/>
 
-                                      <img height="180px" class="slides fade"
+                                      <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image5.png"/>
           </div>
 <a class="next" onclick="plusSlides(1)">❯</a>
