@@ -128,7 +128,7 @@
                 <ul style="list-style-type: none;display: flex;padding-right:40px">
                     <li><a href="/" > Home</a></li>
                     <li><a href="/products" >Product</a></li>
-                    <li><a href="/about_us"> About</a></li>
+                    <li><a href="{% url 'about_us' %}#about_us_section"> About</a></li>
                     <li ><a href="{% url 'about_us' %}#contact_us"> Contact</a></li>
                 </ul>
             </div>
@@ -141,7 +141,7 @@
           <a  class="closebtn" onclick="closeNav()">&times;</a>
           <a href="/">Home</a>
           <a href="/products">Product</a>
-          <a href="/about_us">About</a>
+          <a href="{% url 'about_us' %}#about_us_section">About</a>
           <a href="{% url 'about_us' %}#contact_us">Contact</a>
         </div>
   </div>
