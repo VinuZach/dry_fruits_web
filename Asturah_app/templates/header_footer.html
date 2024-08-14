@@ -128,7 +128,7 @@
                 <ul style="list-style-type: none;display: flex;padding-right:40px">
                     <li><a href="/" > Home</a></li>
                     <li><a href="/products" >Product</a></li>
-                    <li><a href="{% url 'about_us' %}#about_us_section"> About</a></li>
+                    <li><a href="{% url 'about_us' %}#top"> About</a></li>
                     <li ><a href="{% url 'about_us' %}#contact_us"> Contact</a></li>
                 </ul>
             </div>
@@ -141,7 +141,7 @@
           <a  class="closebtn" onclick="closeNav()">&times;</a>
           <a href="/">Home</a>
           <a href="/products">Product</a>
-          <a href="{% url 'about_us' %}#about_us_section">About</a>
+          <a href="{% url 'about_us' %}#top">About</a>
           <a href="{% url 'about_us' %}#contact_us">Contact</a>
         </div>
   </div>
@@ -154,12 +154,14 @@
 
 
   <!--- footer --->
+
+
   <div>
    <div style=" display: flex;
     flex-direction: column;
     align-items: center;
 }">
-
+     <a name="contact_us"></a>
             <img width="300px" height="300px"
                  src="{{ request.scheme }}://{{ request.get_host }}/media/product_page_images/heart_super_healthy.jpeg"/>
        <div style="    text-align: center;">
