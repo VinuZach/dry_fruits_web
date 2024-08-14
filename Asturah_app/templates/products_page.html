@@ -157,11 +157,25 @@
                             }
 
 
+.pc_view
+{
+display:block;
+}
+
+.mobile_view
+{
+display:none;
+}
+
     @media  (any-pointer: coarse)
     {
+
+
+
+
             .market_container
             {
-            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             }
 
             .image_logo_products{
@@ -173,6 +187,16 @@
 
     @media only screen and (max-width: 1010px)
     {
+
+        .pc_view
+{
+display:none;
+}
+
+.mobile_view
+{
+display:block;
+}
         .coloum_samll
         {
         flex-direction: column;
@@ -518,7 +542,8 @@
 
 <!--        </div>-->
 
-               <div  style="margin-top:140px;margin-bottom:60px">
+<div class="pc_view">
+    <div  style="margin-top:140px;margin-bottom:60px">
                     <div >
 
                         <div style="display: flex;
@@ -1082,6 +1107,569 @@
             </div>
 
   </div>
+</div>
+
+
+<div class="mobile_view">
+    <div  style="margin-top:140px;margin-bottom:60px">
+                    <div >
+
+                        <div style="display: flex;
+                                    flex-direction: column;
+                                    align-items: center;">
+
+
+
+                                <div style="color:#42899e;font-weight: bold;    line-height: 1.375em;
+                                    text-align: center;
+                                    font-size: 28px;">PRODUCTS</div>
+                        <div style="margin-top:40px;">Reliable merchandise with a diverse range of sizes, qualities, and countries of origin</div>
+                        </div>
+            <div class="market_container">
+
+                <div class="market_quote">
+
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/badam_image.png');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                   background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Almond Kernel</p>
+                                  <button style="display:none;background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                     margin-left: -20px;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+
+                </div>
+
+                <div class="market_quote">
+
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/almond_in_shell.webp');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                    background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Almond Inshell</p>
+                                  <button style="background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                 display:none;
+                                                     margin-left: -20px;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+                </div>
+
+                <div class="market_quote">
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/cashew_background.png');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                    background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Cashew Kernel</p>
+                                  <button style="display:none;background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                     margin-left: -20px;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+                </div>
+
+                <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/pista_background.png');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: center;
+                                            background-position-y: bottom;">
+                                <p class="item_text">Pistachio Inshell</p>
+                          <button style="background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                             display:none;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+                     </div>
+            </div>
+
+            </div>
+
+    </div>
+
+
+
+
+
+    <div class="market_container">
+
+
+                <div class="market_quote">
+
+                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}/media//product_page_images/pistachio_kernel.webp');
+                                            background-repeat: no-repeat;
+                                            background-size: 200px;
+                                            width: 100%;
+                                            background-position: center;
+                                            background-position-y: bottom;">
+                                <p class="item_text">Pistachio Kernel </p>
+                          <button style="display:none;background: var(--colorAccent);
+                                         border: none;color:white;
+                                             margin-left: -20px;
+                                         border-radius: 10px;padding: 10px 25px;">
+                              <div style="display:flex;align-items: center;">
+                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                  SHOP NOW
+                              </div>
+                          </button>
+                     </div>
+                </div>
+                <div class="market_quote">
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/wallnut_image.png');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                    background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Walnut Inshell</p>
+                                  <button style="background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                 display:none;
+                                                     margin-left: -20px;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+                </div>
+                <div class="market_quote">
+
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/wallnut_kernel.webp');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                    background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Walnut Kernel </p>
+                                  <button style="background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                 display:none;
+                                                     margin-left: -20px;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+
+                </div>
+                <div class="market_quote">
+
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/raisen_image.png');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                    background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Golden Raisins </p>
+                                  <button style="background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                     margin-left: -20px;
+                                                     display:none;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+                </div>
+            </div>
+
+                    <div class="market_container">
+
+
+                <div class="market_quote">
+                <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/black_raisen.webp');
+                                    background-repeat: no-repeat;
+                                    background-size: 200px;
+                                    width: 100%;
+                                    background-position: center;
+                                    background-position-y: bottom;">
+                        <p class="item_text">Black Raisins</p>
+                  <button style="background: var(--colorAccent);
+                                 border: none;color:white;
+                                     margin-left: -20px;
+                                     display:none;
+                                 border-radius: 10px;padding: 10px 25px;">
+                      <div style="display:flex;align-items: center;">
+                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                          SHOP NOW
+                      </div>
+                  </button>
+                </div>
+
+                </div>
+                <div class="market_quote" style="   height: 18em;">
+
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/coffee.png');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                    background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Coffee</p>
+                                  <button style="background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                     margin-left: -20px;
+                                                     display:none;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;"  width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+
+                </div>
+                <div class="market_quote">
+
+                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/cardamom.png');
+                                                    background-repeat: no-repeat;
+                                                    background-size: 200px;
+                                                    width: 100%;
+                                                    background-position: center;
+                                                    background-position-y: bottom;">
+                                        <p class="item_text">Cardamom </p>
+                                  <button style="background: var(--colorAccent);
+                                                 border: none;color:white;
+                                                     margin-left: -20px;
+                                                     display:none;
+                                                 border-radius: 10px;padding: 10px 25px;">
+                                      <div style="display:flex;align-items: center;">
+                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                          SHOP NOW
+                                      </div>
+                                  </button>
+                   </div>
+
+                </div>
+                <div class="market_quote">
+                                              <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/black_pepper.png');
+                                                                    background-repeat: no-repeat;
+                                                                    background-size: 200px;
+                                                                    width: 100%;
+                                                                    background-position: center;
+                                                                    background-position-y: bottom;">
+                                                        <p class="item_text">Black Pepper</p>
+                                                  <button style="background: var(--colorAccent);
+                                                                 border: none;color:white;
+                                                                     margin-left: -20px;
+                                                                     display:none;
+                                                                 border-radius: 10px;padding: 10px 25px;">
+                                                      <div style="display:flex;align-items: center;">
+                                                        <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                          SHOP NOW
+                                                      </div>
+                                                  </button>
+                                   </div>
+
+                                </div>
+            </div>
+
+
+
+             <div class="market_container" style="    align-items: start;">
+
+                        <div class="market_quote">
+
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/cumin_seeds.png');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 200px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+                                                <p class="item_text">Cumin Seed</p>
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                             margin-left: -20px;
+                                                             display:none;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+
+                        </div>
+                       <div class="market_quote" style="   height: 16em;">
+
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/turmeric.jpeg');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 200px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+                                                <p class="item_text">Turmeric </p>
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                             margin-left: -20px;
+                                                             display:none;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+                        </div>
+
+                        <div class="market_quote" style="   height: 15em;" >
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media/product_page_images/saffron.webp');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 200px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+                                                <p class="item_text">Saffron</p>
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                             margin-left: -20px;
+                                                             display:none;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+                        </div>
+
+            </div>
+                   <a name="brand_products"></a>
+<div style="display:flex;justify-content: center;position: relative;">
+     <img  style="  width: 100%;object-fit: cover;  display: inline-block;"  src="{{ request.scheme }}://{{ request.get_host }}/media/product_page_images/yo_nuts_image.jpeg"/>
+  <img  style="position: absolute;
+    left: -4%;
+       top: -2%;
+    width: 33%;
+    transform: rotate(18deg);"   src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin1.png"/>
+
+
+      <img  style="position: absolute;
+    left: -3%;
+  top: 8%;
+    width: 33%;
+    transform: rotate(18deg);"   src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin2.png"/>
+
+    <img  style="position: absolute;
+    left: -2%;
+   top: 18%;
+    width: 33%;
+    transform: rotate(18deg);"   src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin3.png"/>
+
+    <img  style="position: absolute;
+    left: -1%;
+   top: 28%;
+    width: 33%;
+    transform: rotate(18deg);"   src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin4.png"/>
+
+    <img  style="position: absolute;
+    left: 0;
+   top: 38%;
+    width: 33%;
+    transform: rotate(18deg);"   src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin5.png"/>
+       <img  style="position: absolute;
+    left: 1%;
+   top: 48%;
+    width: 33%;
+    transform: rotate(18deg);"   src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin6.png"/>
+<div style="position: absolute;
+   bottom: -80px;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+        display: flex;
+    ">
+    <img  width="12%" style="padding-left:10px"  src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_container1.png"/>
+ <img  width="12%"  style="padding-left:10px" src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_container2.png"/>
+     <img  width="12%"  style="padding-left:10px;margin-left: 40px;" src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonnut_container3.png"/>
+     <img  width="12%"  style="padding-left:10px" src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_container4.png"/>
+     <img  width="12%"  style="padding-left:10px" src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_container5.png"/>
+      <img  width="24%"  style="padding-left:10px" src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_container6.png"/>
+</div>
+
+
+</div>
+
+
+            <div  style="display:none;">
+
+
+                 <div class="market_container">
+
+                        <div class="market_quote" >
+
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin1.png');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 200px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                             margin-left: -20px;
+                                                             display:none;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+
+                        </div>
+                       <div class="market_quote" >
+
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin2.png');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 200px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                             margin-left: -20px;
+                                                             display:none;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+                        </div>
+
+                        <div class="market_quote">
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yonut_tin3.png');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 200px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                             margin-left: -20px;
+                                                             display:none;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+                        </div>
+
+            </div>
+
+
+
+                         <div class="market_container">
+
+                        <div class="market_quote">
+
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yo_nut_tin.png');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 350px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+                                                <p class="item_text">Yonut Tin</p>
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                         display:none;
+                                                             margin-left: -20px;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+
+                        </div>
+
+                        <div class="market_quote">
+
+                                      <div style="margin-left:40px;  background-image: url('{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/yo_nuts_pouch.jpeg');
+                                                            background-repeat: no-repeat;
+                                                            background-size: 200px;
+                                                            width: 100%;
+                                                            background-position: center;
+                                                            background-position-y: bottom;">
+                                                <p class="item_text">Yonut Pouch </p>
+                                          <button style="background: var(--colorAccent);
+                                                         border: none;color:white;
+                                                             margin-left: -20px;
+                                                             display:none;
+                                                         border-radius: 10px;padding: 10px 25px;">
+                                              <div style="display:flex;align-items: center;">
+                                                <svg style="padding:5px;" width="15px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#f7f7f7" d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
+                                                  SHOP NOW
+                                              </div>
+                                          </button>
+                           </div>
+
+                        </div>
+
+                         </div>
+
+
+            </div>
+
+  </div>
+</div>
 
 
 
