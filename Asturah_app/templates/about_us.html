@@ -1,9 +1,26 @@
 {% extends "header_footer.html" %}
 {% block userinfo %}
-<!--https://www.shutterstock.com/image-photo/variety-dried-fruits-nuts-sale-preobrajenskiy-1029196282-->
-<!--https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.anmoldryfruits.com%2F&psig=AOvVaw0Q-Km-nzWIpoyaZuDdJVYr&ust=1723634742423000&source=images&cd=vfe&opi=89978449&ved=0CBcQjhxqFwoTCOCWhYXu8YcDFQAAAAAdAAAAABAk-->
-<!--https://www.shutterstock.com/image-photo/dried-fruit-stor-istanbul-grand-bazaar-1395078059-->
+<!--    https://shop.tulsidas.com/cdn/shop/collections/nuts-dried-fruits-194404.jpg?v=1685168547-->
+<!--    https://www.freepik.com/free-photo/some-assorted-nuts-dried-fruits-with-pecan-pistachios-almond-peanut-cashew-pine-nuts-different-bowls-black-pan-flat-lay_7481235.htm#fromView=search&page=1&position=41&uuid=51fcaa5e-3bcb-4659-87b7-7d2fd73a0663-->
+<!--    https://www.shutterstock.com/image-photo/nuts-dried-fruits-healthy-snacks-apricots-1990650518-->
+<!--    https://www.shutterstock.com/image-photo/nuts-dried-fruits-assortment-healthy-snacks-2114712254-->
+<!--    -->
+<!--    -->
+<!--    https://www.shutterstock.com/image-photo/composition-dried-fruits-assorted-nuts-nutritious-2479563773-->
+<!--    https://www.shutterstock.com/image-photo/dried-fruits-berries-on-gray-background-1926673568-->
+<!--    -->
+<!--    https://www.shutterstock.com/image-photo/different-types-nuts-seeds-dried-fruits-1742876648-->
+
 <style>
+    .pc_view
+    {
+    display:auto !important;
+    }
+
+    .mobile_view
+    {
+    display:none !important;
+    }
     .text
     {
         line-height: 1.3;
@@ -19,6 +36,19 @@
     text-align: center;
     margin:150px 0px
 }
+
+    @media  (any-pointer: coarse)
+    {
+     .mobile_view
+    {
+    display:block !important;
+    }
+
+    .pc_view
+    {
+    display:none !important;
+    }
+    }
          @media only screen and (max-width: 1010px)
     {
                 .main_body
@@ -33,7 +63,7 @@
     }
 </style>
      <a name="about_us_section"></a>
-<div class="main_body">
+<div  class="main_body pc_view">
 
             <p class="text">
             Kafla Trading L.L.C is one of the leading importer, exporter, wholesaler and retailer of  superior quality Nuts, Dried Fruits, Spices, Pulses, Coffee, Tea and many more in the UAE, Middle East region and International markets.
@@ -45,13 +75,47 @@
 
 
             </p>
+<div>
 
-     <img    style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media//about_images/image1.jpg"/>
-    <div>
-          <img  height="200px"  style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media//about_images/image3.png"/>
-     <img  height="200px"  style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media/about_images/image2.jpg"/>
+
+     <img  width="900px"  style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media//about_images/image4.jpg"/>
+    <div style="    display: flex;
+    justify-content: space-between;">
+          <img  height="250px"  width="350dp" style="padding-left:10px;margin-top:20px;    object-fit: cover;" src="{{ request.scheme }}://{{ request.get_host }}//media//about_images/image3.jpg"/>
+     <img  height="250px"  style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media/about_images/image2.jpg"/>
     </div>
-
+</div>
 </div>
 
+
+
+<div class="main_body mobile_view">
+
+<div>
+<div style="display: flex;
+    justify-content: space-between;
+    margin: 0px 35px;">
+                    <p class="text" style="font-size: 22px;width:auto;">
+            Kafla Trading L.L.C is one of the leading importer, exporter, wholesaler and retailer of  superior quality Nuts, Dried Fruits, Spices, Pulses, Coffee, Tea and many more in the UAE, Middle East region and International markets.
+            As a leading wholesale supplier in UAE, we deal with top producers around the globe and bring a wide range of quality food products at a reasonable price. We assist our customers to Increase their sales margins by offering them the best price in the market.
+            </p>
+        <div style="display: flex;
+    flex-direction: column;
+    justify-content: space-between;">
+              <img  height="250px"  style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media//about_images/image3.jpg"/>
+     <img  height="250px"  style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media/about_images/image2.jpg"/>
+        </div>
+
+    </div>
+   <p class="text" style="width:100%;font-size:21px">
+
+            Our most modern Logistics and Storage facilities take care of our imported products and it provides the best quality products to our local and international customers through out the year.
+
+
+            </p>
+     <img   width="100%" style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media//about_images/image4.jpg"/>
+
+
+</div>
+</div>
 {% endblock %}
