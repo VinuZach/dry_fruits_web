@@ -12,6 +12,11 @@
 <!--    https://www.shutterstock.com/image-photo/different-types-nuts-seeds-dried-fruits-1742876648-->
 
 <style>
+    form >input
+    {
+    padding:10px;
+    margin:5px;
+    }
     .pc_view
     {
     display:auto !important;
@@ -25,6 +30,8 @@
     {
         line-height: 1.3;
         width:70%;
+        font-family: sans-serif;
+    color: #241505;
 
     }
     .main_body
@@ -85,6 +92,8 @@
      <img  height="250px"  style="padding-left:10px;margin-top:20px;" src="{{ request.scheme }}://{{ request.get_host }}//media/about_images/image2.jpg"/>
     </div>
 </div>
+
+
 </div>
 
 
@@ -117,5 +126,47 @@
 
 
 </div>
+
+
 </div>
+
+<div style="    display: flex;
+    flex-direction: column;
+    align-items: center;">
+    <div style="width:40%" >
+    <p style="font-size: 30px;
+        color: #603c18;
+    font-family: cursive;">Enquiry</p>
+     <form style="display: flex;
+    flex-direction: column;
+    padding-top:10px;
+    align-items: stretch;" autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
+
+
+            <input  type="hidden" name="access_key" value="ec4970a9-7ca3-402c-b031-ed3db375669a">
+
+
+                <input type="text" placeholder="Name" name="name" required>
+                <input type="text"  placeholder="Address" name="address" required>
+                <input type="email"  placeholder="Email" name="email" required>
+                <input type="number"  placeholder="Phone" name="phone" required>
+                <input type="text"  placeholder="Subject" name="subject" required>
+                <input style="    min-height: 70px;" placeholder="Message" name="message" required >
+
+
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+            <button style="    margin-top: 30px;
+    padding: 15px 0px;
+    background: #603C18;
+    font-family: sans-serif;
+    border: none;
+    font-size: 20px;
+    color: white;" type="submit">Submit</button>
+
+</form>
+</div>
+</div>
+
+
 {% endblock %}

@@ -56,14 +56,7 @@
     @media  (any-pointer: coarse)
     {
 
-            #content{
-                text-align: center;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: flex-start;
-                margin: 10px 10px;
-            }
+
 
 <!--            .home_images{-->
 <!--                width:100%;-->
@@ -97,7 +90,7 @@
             width:70%;
             line-height: 1.2;
             margin-bottom:30px;
-            padding-top:160px;
+
         }
 
         .banner
@@ -154,15 +147,18 @@
 ">
         <div id="content">
             <div style="    width: 60%;">
-                 <h2 style="font-size: 30px;text-align: center;
-        color:#42899e;margin:13px;">Kafla Trading LLC</h2>
-             <p style="color: gray;font-weight: 100;font-size: 18px;    width: 100%;">
-         Kafla Trading L.L.C stands as a premier importer, exporter, wholesaler, and retailer of high-quality nuts, dried fruits, spices, pulses, coffee, tea, and more in the UAE, Middle East, and global markets.         </p>
+                 <h2 style="    color: #603c18;
+    font-family: cursive;font-size: 30px;text-align: center;
+        margin:13px;">Kafla Trading LLC</h2>
+             <p style="color: gray;font-weight: 100;font-size: 18px;    width: 100%;font-family: sans-serif;
+    color: #493623c7;">
+         Kafla Trading L.L.C stands as a premier importer, exporter, wholesaler, and retailer of high-quality nuts, dried fruits, spices, pulses, coffee, tea and more in the UAE, Middle East, and global markets.         </p>
 
 
             </div>
 
-        <p class="data_content">
+        <p class="data_content" style="font-family: sans-serif;
+    color: #241505;">
 
 
 As a top wholesale supplier in the UAE, we collaborate with leading global producers to offer a diverse range of quality food products at competitive prices. We assure our customers with the best market rates.
@@ -177,7 +173,9 @@ Our state-of-the-art logistics and storage facilities ensure the optimal handlin
 
 
          <p style="
-color:#42899e;
+           color: #603c18;
+    font-family: cursive;
+
     height: 60px;
     display: flex;
     align-items: center;
@@ -185,11 +183,11 @@ color:#42899e;
     width:100%;
     font-size:20px;
         margin: 0px;
-    justify-content: center;">
+    justify-content: center;" onclick="location.href='{% url 'products' %}#brand_products'">
           Our Premium Products
          </p>
 
-<div class="home_images">
+<div class="home_images" onclick="location.href='{% url 'products' %}#brand_products'">
 
        <img height="700px"  style="padding:2px;    width: 100%;
     object-fit: cover;"
