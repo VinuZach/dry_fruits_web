@@ -69,6 +69,13 @@
                 }
     }
 </style>
+
+<script>
+    window.addEventListener("pageshow", () => {
+ document.getElementById("email_form").reset();
+
+});
+</script>
      <a name="about_us_section"></a>
 <div  class="main_body pc_view">
 
@@ -137,13 +144,13 @@
     <p style="font-size: 30px;
         color: #603c18;
     font-family: cursive;">Enquiry</p>
-     <form style="display: flex;
+     <form id="email_form" style="display: flex;
     flex-direction: column;
     padding-top:10px;
     align-items: stretch;" autocomplete="off" action="https://api.web3forms.com/submit" method="POST">
 
 
-            <input  type="hidden" name="access_key" value="ec4970a9-7ca3-402c-b031-ed3db375669a">
+            <input  type="hidden" name="access_key" value="7823d7f3-2db1-4144-a855-118dfb645285">
 
 
                 <input type="text" placeholder="Name" name="name" required>
