@@ -2,16 +2,17 @@
 {% block userinfo %}
 <style>
 
-     .home_images{
-        width:100%;display: flex;
-        padding-bottom:40px ;
-        justify-content: center;
+        .home_images{
+            width:100%;display: flex;
+            padding-bottom:40px ;
+            justify-content: center;
         }
-    .slides{
+
+        .slides{
             margin-top:10px;
             display:none;
-           width: 650px;
-    object-fit: cover;
+            width: 650px;
+            object-fit: cover;
         }
         .fade {
           animation-name: fade;
@@ -19,77 +20,95 @@
         }
 
         @keyframes fade {
-          from {opacity: .4}
-          to {opacity: 1}
+            from {opacity: .4}
+            to {opacity: 1}
         }
-.prev, .next {
 
+        .prev, .next {
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
 
+        .banner
+        {
+            display: flex;
+            flex-direction: row;
+            margin-top:120px;
+            align-items: center;
+            padding: 0px 100px;
+            justify-content: space-between;
+        }
 
-  width: auto;
-  padding: 16px;
-
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-    .banner
-    {
-    display: flex;
-    flex-direction: row;
-    margin-top:120px;
-    align-items: center;
-    padding: 0px 100px;
-    justify-content: space-between;
-    }
-
-       #content{
+       #content
+       {
             text-align: center;
             display: flex;
             flex-direction: column;
             align-items: center;
-    }
+        }
 
-        @media  (any-pointer: coarse)
+    @media  (any-pointer: coarse)
     {
 
-      #content{
-            text-align: center;
+            #content{
+                text-align: center;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+                margin: 10px 10px;
+            }
+
+<!--            .home_images{-->
+<!--                width:100%;-->
+<!--                display: flex;-->
+<!--                padding-bottom:40px ;-->
+<!--                flex-direction: column;-->
+<!--                align-items: center;-->
+<!--                justify-content: center;-->
+<!--                align-items: stretch;-->
+<!--                width:auto;-->
+<!--            }-->
+    }
+
+        .data_content{
+            color: black;
+            font-weight: 100;
+            font-size: 15px;
+            width:70%;
+            line-height: 1.2;
+            margin-bottom:30px;
+        }
+
+
+        @media only screen and (max-width: 1010px)
+        {
+
+        .data_content{
+            color: black;
+            font-weight: 100;
+            font-size: 15px;
+            width:70%;
+            line-height: 1.2;
+            margin-bottom:30px;
+            padding-top:160px;
+        }
+
+        .banner
+        {
             display: flex;
             flex-direction: row;
-                    justify-content: space-between;
-                    margin-top: 31px;
-    }
-
-         .home_images{
-        width:100%;
-        display: flex;
-padding-bottom:40px ;
-flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-items: stretch;
-    width:auto;
+            margin-top:200px;
+            align-items: center;
+            padding: 0px 100px;
+            justify-content: space-between;
         }
-    }
-          @media only screen and (max-width: 1010px)
-    {
-
-
-
-      .banner
-    {
-    display: flex;
-    flex-direction: row;
-    margin-top:200px;
-    align-items: center;
-    padding: 0px 100px;
-    justify-content: space-between;
-    }
     }
 </style>
 <div>
@@ -100,8 +119,7 @@ flex-direction: column;
           <div onclick="location.href='{% url 'products' %}#brand_products'">
 
 
-                  <img height="200px"  class="slides fade" style="    margin-bottom:0px"
-                       src="{{ request.scheme }}://{{ request.get_host }}/media/product_page_images/banner_images/banner_image9.jpg"/>
+
 
                              <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image1.jpeg"/>
@@ -117,8 +135,7 @@ flex-direction: column;
 
                                     <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image4.png"/>
- <img height="180px"  class="slides fade" style="    margin-bottom:20px"
-                       src="{{ request.scheme }}://{{ request.get_host }}/media/product_page_images/banner_images/banner_image10.jpg"/>
+
 
                                       <img height="200px" class="slides fade"
                        src="{{ request.scheme }}://{{ request.get_host }}//media//product_page_images/banner_images/banner_image5.png"/>
@@ -132,19 +149,26 @@ flex-direction: column;
 
     <div style="text-align:center;display: flex;
                  flex-direction: column;
-                 align-items: center;">
+                 align-items: center;
+        align-items: flex-start;
+">
         <div id="content">
             <div style="    width: 60%;">
                  <h2 style="font-size: 30px;text-align: center;
         color:#42899e;margin:13px;">Kafla Trading LLC</h2>
              <p style="color: gray;font-weight: 100;font-size: 18px;    width: 100%;">
-        Quality Foodstuff since 1997
-        </p>
+         Kafla Trading L.L.C stands as a premier importer, exporter, wholesaler, and retailer of high-quality nuts, dried fruits, spices, pulses, coffee, tea, and more in the UAE, Middle East, and global markets.         </p>
+
+
             </div>
 
-        <p style="color: black;font-weight: 100;font-size: 15px;width:70%;line-height: 1.2;margin-bottom:30px;">
-        Established in 1997, Abed Khosh General Trading has been supplying its clients with the very best food products tailored to their needs. We are one of the major distributors of agricultural commodities, exporting to over 20 countries.
-        </p>
+        <p class="data_content">
+
+
+As a top wholesale supplier in the UAE, we collaborate with leading global producers to offer a diverse range of quality food products at competitive prices. We assure our customers with the best market rates.
+
+Our state-of-the-art logistics and storage facilities ensure the optimal handling of imported goods, delivering top-notch products to both local and international clients throughout the year.
+
         </div>
 
 
@@ -167,10 +191,10 @@ color:#42899e;
 
 <div class="home_images">
 
-       <img height="700px"  style="padding:2px"
+       <img height="700px"  style="padding:2px;    width: 100%;
+    object-fit: cover;"
                        src="{{ request.scheme }}://{{ request.get_host }}/media/home_page_images/dry_fruits_collection3.webp"/>
- <img height="700px"  style="padding:2px"
-                       src="{{ request.scheme }}://{{ request.get_host }}/media/home_page_images/dry_fruits_collection4.jpg"/>
+
 </div>
 
 </div>
