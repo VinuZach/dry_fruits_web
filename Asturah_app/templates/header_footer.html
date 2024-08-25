@@ -155,7 +155,7 @@
             <div class ="menu_item" >
                 <ul id="menus" style="list-style-type: none;display: flex;padding-right:40px">
                     <li><a href="/" > Home</a></li>
-                    <li><a href="/products" >Product</a></li>
+                    <li><a href="/products" >Products</a></li>
                     <li><a href="{% url 'about_us' %}#top"> About</a></li>
                     <li ><a href="{% url 'about_us' %}#contact_us"> Contact</a></li>
                 </ul>
@@ -168,7 +168,7 @@
         <div id="mySidenav" class="sidenav">
           <a  class="closebtn" onclick="closeNav()">&times;</a>
           <a href="/">Home</a>
-          <a href="/products">Product</a>
+          <a href="/products">Products</a>
           <a href="{% url 'about_us' %}#top">About</a>
           <a href="{% url 'about_us' %}#contact_us">Contact</a>
         </div>
@@ -192,8 +192,9 @@
     color: #241505;
 ">
      <a name="contact_us"></a>
-
-       <div style=" margin-top:50px;   text-align: center;">
+            <img width="300px" height="300px"
+                 src="{{ request.scheme }}://{{ request.get_host }}/media/product_page_images/heart_super_healthy.jpeg"/>
+       <div style="    text-align: center;">
 
       <p> kafla.ae@gmail.com</p>
 

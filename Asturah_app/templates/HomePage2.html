@@ -109,7 +109,7 @@
 
 <div class="banner">
          <a class="prev" onclick="plusSlides(-1)">❮</a>
-          <div onclick="location.href='{% url 'products' %}#brand_products'">
+          <div onclick="location.href='{% url 'products' %}#brand_products'" style="cursor: pointer;">
 
 
 
@@ -179,15 +179,15 @@ Our state-of-the-art logistics and storage facilities ensure the optimal handlin
     height: 60px;
     display: flex;
     align-items: center;
-
+cursor: pointer;
     width:100%;
     font-size:20px;
         margin: 0px;
-    justify-content: center;" onclick="location.href='{% url 'products' %}#brand_products'">
+    justify-content: center;" onclick="location.href='{% url 'products' %}#brand_products'" >
           Our Premium Products
          </p>
 
-<div class="home_images" onclick="location.href='{% url 'products' %}#brand_products'">
+<div class="home_images" onclick="location.href='{% url 'products' %}#brand_products'" style="cursor: pointer;">
 
        <img height="700px"  style="padding:2px;    width: 100%;
     object-fit: cover;"
